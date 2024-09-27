@@ -1,0 +1,27 @@
+{
+  "name": "babauszi-desktop",
+  "version": "1.0.0",
+  "description": "Babauszi admin for Windows",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Mocsáry Péter",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^25.0.5"
+  },
+  "build": {
+    "appId": "app.web.babauszi-admin",
+    "productName": "Babauszi Admin",
+    "buildVersion": "1.0",
+    "win": {
+      "target": "nsis-web",
+      "icon": "assets/favicon.ico",
+      "publisherName": "Mocsáry Péter"
+    }
+  }
+}
